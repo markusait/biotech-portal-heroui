@@ -18,13 +18,6 @@ interface StatCardProps {
   trendValue?: number;
 }
 
-interface ProgressData {
-  month: string;
-  offers: number;
-  kits: number;
-  reports: number;
-}
-
 const StatCard: React.FC<StatCardProps> = ({ value, description, trend, trendValue }) => {
   return (
     <div className="p-6 bg-default-50 dark:bg-default-100 rounded-lg shadow-sm">
